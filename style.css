@@ -68,6 +68,72 @@ body > img{
     column-gap: 20px;
 }
 
-.link{
+.link {
     font-weight: 500; 
+}
+
+/* Infinite Carousel Animation for the Advertisments */
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    border: 5px;
+    display: flex;
+    overflow-x: auto;
+    padding-top: 10em;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s linear infinite;
+    padding-right: 1em;
+    min-width: 100%; /* newly added */
+    flex-grow: 1;
+}
+
+/*.card {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: cornflowerblue;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+*/
+
+.card {
+    flex: 0 0 150px;      /* card width */
+    height: 150px;        /* card height */
+    padding: 1em;           /* remove padding */
+    border-radius: 0.2em;
+    overflow: hidden;     /* hides any overflow if image is bigger */
+    background: none;     /* remove blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;      /* image will never exceed card width */
+    max-height: 100%;     /* image will never exceed card height */
+    object-fit: contain;  /* maintain aspect ratio, fit inside card */
+    display: block;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }

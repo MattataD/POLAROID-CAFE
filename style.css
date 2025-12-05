@@ -71,13 +71,38 @@ body > .background-img {
     column-gap: 20px;
 }
 
+.nav-item-container {
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.nav-item-container:hover {
+    background: rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.link-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0.15);
+}
+
 .link {
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+    transition: color 0.2s ease;
 }
 
 .link:hover {
-    color: #666;
+    color: #444;
 }
 
 .carousel {

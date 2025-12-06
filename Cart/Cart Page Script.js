@@ -35,7 +35,7 @@ function renderCart() {
         emptyMsg.innerHTML = `
             <h3 style="margin-bottom: 10px;">Your cart is empty</h3>
             <p>Add some delicious items from our menu!</p>
-            <a href="../Menu/Coffee Drinks/Menu - Coffee Drinks.html" 
+            <a href="../Menu/Coffee Drinks/Menu - Coffee Drinks.php" 
                style="display: inline-block; margin-top: 20px; padding: 12px 24px; 
                       background: #333; color: white; border-radius: 8px; text-decoration: none;">
                 Browse Menu

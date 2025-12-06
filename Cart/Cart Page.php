@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">                
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../cart-manager.js"></script>
+    <script defer src="Cart Page Script.js"></script>
+    <link rel="stylesheet" href="Cart Page Style.css">
+    <title>Polaroid Cafe</title>
+</head>
+ <img src="../Images/A4-MENU for canva 1.png" alt="">
+    <header class="Nav-bar">
+    <div class="logo-container">
+    <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
+    <p class="logo-text">POLAROID CAFE</p>
+    </div>
+        <ul class="links">
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Home Fill Icon.svg  " class="nav-icon" alt="">
+                    <a href="../Home Page.php" class="link">Home</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Menu Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../Menu/Coffee Drinks/Menu - Coffee Drinks.php" class="link">Menu</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Contuct Us Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../Contact/Contact Info Page.php" class="link">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Cart Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../Cart/Cart Page.php" class="link">Cart</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="cart-wrap">
+    <div class="cart-container">
+    <h2>Your Cart</h2>
+
+    <div class="cart-item">
+        <img src="sample-food.jpg" class="item-img">
+
+        <div class="item-details">
+            <h3 class="item-name">Caramel Latte</h3>
+            <p class="item-size">Large</p>
+            <p class="item-price">₱120</p>
+        </div>
+
+        <div class="item-qty">
+            <button class="qty-btn">-</button>
+            <span class="qty-number">1</span>
+            <button class="qty-btn">+</button>
+        </div>
+
+        <button class="delete-btn">✕</button>
+    </div>
+
+    <!-- More .cart-item will automatically stack -->
+
+    <div class="subtotal-box">
+        <p>Subtotal:</p>
+        <h3 class="subtotal-price">₱120</h3>
+    </div>
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+</div>
+</div>
+
+   
+</body>
+</html>

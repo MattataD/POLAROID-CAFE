@@ -120,6 +120,7 @@ body > img{
 .menu-parts {
     background: #ffffffcc;
     padding: 12px 20px;
+    /* border-radius: 10px; --> to make the edges round not pointy! */
     border: 2px solid #ffffff80;
     backdrop-filter: blur(6px);
 

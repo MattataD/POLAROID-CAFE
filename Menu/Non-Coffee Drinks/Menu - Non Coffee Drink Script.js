@@ -49,8 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             const bgImage = card.style.backgroundImage;
             const imageUrl = bgImage.slice(5, -2);
-            
-            // Extract item name from image path
             const itemName = extractItemName(imageUrl);
             
             createOverlay(imageUrl, itemName);
@@ -58,19 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Extract item name from image path
 function extractItemName(imagePath) {
     const parts = imagePath.split('/');
     const filename = parts[parts.length - 1];
     const nameWithoutExt = filename.replace('.svg', '').replace(/\\/g, '');
     return nameWithoutExt.replace(/%20/g, ' ').replace('Palette', '').trim();
 }
-
-// Price data for items (you can adjust these)
-const PRICES = {
-    'Medio': 100,
-    'Largo': 120
-};
 
 function createOverlay(imageUrl, itemName) {
     const overlay = document.createElement('div');
@@ -102,15 +93,20 @@ function createOverlay(imageUrl, itemName) {
     let selectedSize = null;
     let selectedPrice = 0;
     
-    ['Medio', 'Largo'].forEach(size => {
+    // Get specific prices for this food item
+    const availableSizes = getAvailableSizesForItem(itemName);
+    const itemPrices = getAllPricesForItem(itemName);
+    
+    availableSizes.forEach(size => {
+        const price = itemPrices[size];
         const btn = document.createElement('button');
         btn.className = 'size-btn';
-        btn.textContent = `${size} - ₱${PRICES[size]}`;
+        btn.textContent = `${size} - ₱${price}`;
         btn.addEventListener('click', () => {
             document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
             btn.classList.add('selected');
             selectedSize = size;
-            selectedPrice = PRICES[size];
+            selectedPrice = price;
         });
         sizeButtons.appendChild(btn);
     });
@@ -169,16 +165,15 @@ function createOverlay(imageUrl, itemName) {
     addToCartBtn.textContent = 'Add to Cart';
     addToCartBtn.addEventListener('click', () => {
         if (selectedSize) {
-            // Add to cart
             addToCart({
                 name: itemName,
                 size: selectedSize,
                 price: selectedPrice,
                 quantity: quantity,
-                imageUrl: imageUrl
+                imageUrl: imageUrl,
+                category: 'Non-Coffee'
             });
             
-            // Show success message
             const message = document.createElement('div');
             message.style.cssText = `
                 position: fixed;

@@ -5,6 +5,7 @@ headerEl.addEventListener('mouseenter', () => {
 headerEl.addEventListener('mouseleave', () => {
     headerEl.classList.remove('Nav-bar-hov');
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const carousels = document.querySelectorAll('.carousel');
     
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 // Image overlay functionality
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
@@ -46,30 +48,49 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => {
         card.addEventListener('click', () => {
             const bgImage = card.style.backgroundImage;
-            const imageUrl = bgImage.slice(5, -2); // Extract URL from url("...")
+            const imageUrl = bgImage.slice(5, -2);
             
-            createOverlay(imageUrl);
+            // Extract item name from image path
+            const itemName = extractItemName(imageUrl);
+            
+            createOverlay(imageUrl, itemName);
         });
     });
 });
 
-function createOverlay(imageUrl) {
-    // Create overlay container
+// Extract item name from image path
+function extractItemName(imagePath) {
+    const parts = imagePath.split('/');
+    const filename = parts[parts.length - 1];
+    const nameWithoutExt = filename.replace('.svg', '').replace(/\\/g, '');
+    return nameWithoutExt.replace(/%20/g, ' ').replace('Palette', '').trim();
+}
+
+// Price data for items (you can adjust these)
+const PRICES = {
+    'Medio': 100,
+    'Largo': 120
+};
+
+function createOverlay(imageUrl, itemName) {
     const overlay = document.createElement('div');
     overlay.className = 'image-overlay';
     
-    // Create content container
     const overlayContent = document.createElement('div');
     overlayContent.className = 'overlay-content';
     
-    // Create image
     const img = document.createElement('img');
     img.src = imageUrl;
     img.className = 'overlay-image';
     
-    // Create options container
     const optionsContainer = document.createElement('div');
     optionsContainer.className = 'overlay-options';
+    
+    // Item name display
+    const itemTitle = document.createElement('h2');
+    itemTitle.textContent = itemName;
+    itemTitle.style.marginBottom = '20px';
+    itemTitle.style.color = '#333';
     
     // Size selection
     const sizeLabel = document.createElement('h3');
@@ -78,13 +99,18 @@ function createOverlay(imageUrl) {
     const sizeButtons = document.createElement('div');
     sizeButtons.className = 'size-buttons';
     
+    let selectedSize = null;
+    let selectedPrice = 0;
+    
     ['Medio', 'Largo'].forEach(size => {
         const btn = document.createElement('button');
         btn.className = 'size-btn';
-        btn.textContent = size;
+        btn.textContent = `${size} - ₱${PRICES[size]}`;
         btn.addEventListener('click', () => {
             document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
             btn.classList.add('selected');
+            selectedSize = size;
+            selectedPrice = PRICES[size];
         });
         sizeButtons.appendChild(btn);
     });
@@ -142,9 +168,34 @@ function createOverlay(imageUrl) {
     addToCartBtn.className = 'add-to-cart-btn';
     addToCartBtn.textContent = 'Add to Cart';
     addToCartBtn.addEventListener('click', () => {
-        const selectedSize = document.querySelector('.size-btn.selected');
         if (selectedSize) {
-            alert(`Added ${quantity} ${selectedSize.textContent} item(s) to cart!`);
+            // Add to cart
+            addToCart({
+                name: itemName,
+                size: selectedSize,
+                price: selectedPrice,
+                quantity: quantity,
+                imageUrl: imageUrl
+            });
+            
+            // Show success message
+            const message = document.createElement('div');
+            message.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #4CAF50;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                z-index: 10000;
+                font-weight: 600;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            `;
+            message.textContent = `Added ${quantity} ${selectedSize} ${itemName} to cart!`;
+            document.body.appendChild(message);
+            
+            setTimeout(() => message.remove(), 3000);
             overlay.remove();
         } else {
             alert('Please select a size first!');
@@ -152,6 +203,7 @@ function createOverlay(imageUrl) {
     });
     
     // Append everything
+    optionsContainer.appendChild(itemTitle);
     optionsContainer.appendChild(sizeLabel);
     optionsContainer.appendChild(sizeButtons);
     optionsContainer.appendChild(quantityLabel);
@@ -164,7 +216,6 @@ function createOverlay(imageUrl) {
     overlayContent.appendChild(optionsContainer);
     overlay.appendChild(overlayContent);
     
-    // Close on overlay background click
     overlay.addEventListener('click', (e) => {
         if (e.target === overlay) {
             overlay.remove();

@@ -21,28 +21,28 @@
             <li class="nav-item-container">
                 <div class="link-items">
                     <img src="Images/Home Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="/Home Page.html" class="link">Home</a>
+                    <a href="Home Page.php" class="link">Home</a>
                 </div>
             </li>
 
             <li class="nav-item-container">
                 <div class="link-items">
                     <img src="Images/Menu Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="Menu/Coffee Drinks/Menu - Coffee Drinks.html" class="link">Menu</a>
+                    <a href="Menu/Coffee Drinks/Menu - Coffee Drinks.php" class="link">Menu</a>
                 </div>
             </li>
 
             <li class="nav-item-container">
                 <div class="link-items">
                     <img src="Images/Contuct Us Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="Contact/Contact Info Page.html" class="link">Contact Us</a>
+                    <a href="Contact/Contact Info Page.php" class="link">Contact Us</a>
                 </div>
             </li>
 
             <li class="nav-item-container">
                 <div class="link-items">
                     <img src="Images/Cart Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="/Cart/Cart Page.html" class="link">Cart</a>
+                    <a href="/Cart/Cart Page.php" class="link">Cart</a>
                 </div>
             </li>
         </ul>

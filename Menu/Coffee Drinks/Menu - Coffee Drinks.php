@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">                
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../../cart-manager.js"></script>
+    <script defer src="../../price.js"></script>
+    <script defer src="Menu - Coffee Drinks Script.js"></script>
+    <link rel="stylesheet" href="Menu - Coffee Drinks Styles.css">
+    <title>Polaroid Cafe</title>
+</head>
+<body>
+     <img src="../Images/A4-MENU for canva 1.png" alt="">
+    <header class="Nav-bar">
+    <div class="logo-container">
+    <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
+    <p class="logo-text">POLAROID CAFE</p>
+    </div>
+        <ul class="links">
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Home Fill Icon.svg  " class="nav-icon" alt="">
+                    <a href="../../Home Page.php" class="link">Home</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Menu Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../Coffee Drinks/Menu - Coffee Drinks.php" class="link">Menu</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Contuct Us Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../../Contact/Contact Info Page.php" class="link">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Cart Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../../Cart/Cart Page.php" class="link">Cart</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <header class="menu-bar">
+        <ul class="menu">
+            <li class="menu-parts">
+                <a href="../Coffee Drinks/Menu - Coffee Drinks.php" class="category">Coffee Drinks</a>
+            </li>
+            <li class="menu-parts">
+                <a href="../Non-Coffee Drinks/Menu - Non Coffee Drinks.php" class="category">Non-Coffee Drinks</a>
+            </li>
+            <li class="menu-parts">
+                <a href="../Food Items/Menu - Food Items.php" class="category">Food Items</a>
+            </li>
+        </ul>
+    </header>
+    <div class="coffee-drinks">
+        <ul class="drinks">
+            <li class="drink-type">
+                <a class="drink">Iced Espresso</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Americano.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Biscoffee.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Butterscotch.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Cafe\ Matcha.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Caramel\ Macchiato.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Cinna\ White.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Dark\ Mocha.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Hazelnutella.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Spanish.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/Vanilla.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/ICEDESPRESSO/White\ Mocha.svg');"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="drink-type">
+                <a class="drink">Hot Espresso</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/HOTESPRESSO/BLACK.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/HOTESPRESSO/Cafe\ Matcha\ Hot.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/HOTESPRESSO/Caramel\ Hot\ Espresso.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/HOTESPRESSO/Latte.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/HOTESPRESSO/Mocha\ Hot.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/HOTESPRESSO/Vanilla\ Hot\ Espresso.svg');"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="drink-type">
+                <a class="drink">Coffee Frappuccino</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/FRAPPUCHINO/Caramel.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/FRAPPUCHINO/Java\ Chips.svg');"></div>
+                        <div class="card" style="background-image: url('../Coffee Drinks/Coffee Drinks/FRAPPUCHINO/Mochaccino.svg');"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

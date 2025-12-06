@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">                
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../../price.js"></script>
+    <script defer src="../../cart-manager.js"></script>
+    <script defer src="Menu - Food Items Script.js"></script>
+    <link rel="stylesheet" href="Menu - Food Items Styles.css">
+    <title>Polaroid Cafe</title>
+</head>
+<body>
+ <img src="../Images/A4-MENU for canva 1.png" alt="">
+    <header class="Nav-bar">
+    <div class="logo-container">
+    <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
+    <p class="logo-text">POLAROID CAFE</p>
+    </div>
+        <ul class="links">
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Home Fill Icon.svg  " class="nav-icon" alt="">
+                    <a href="../../Home Page.php" class="link">Home</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Menu Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../Menu/Coffee Drinks/Menu - Coffee Drinks.php" class="link">Menu</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Contuct Us Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../../Contact/Contact Info Page.php" class="link">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Images/Cart Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../../Cart/Cart Page.php" class="link">Cart</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <header class="menu-bar">
+        <ul class="menu">
+            <li class="menu-parts">
+                <a href="../Coffee Drinks/Menu - Coffee Drinks.php" class="category">Coffee Drinks</a>
+            </li>
+            <li class="menu-parts">
+                <a href="../Non-Coffee Drinks/Menu - Non Coffee Drinks.php" class="category">Non-Coffee Drinks</a>
+            </li>
+            <li class="menu-parts">
+                <a href="../Food Items/Menu - Food Items.php" class="category">Food Items</a>
+            </li>
+        </ul>
+    </header>
+    <div class="food-items">
+        <ul class="foods">
+            <li class="food-type">
+                <a class="food">Cookies</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Belgian\ Chocolate\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Campfire\ S\'mores\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Cashew\ ChocoChip.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Choco\ Chip.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Lotus\ Biscoff\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Matcha.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Oreo\ Bomb\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Red\ Velvet.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Triple\ Choco.svg');"></div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="food-type">
+                <a class="food">Brownies</a>
+                <div class="carousel">
+                    <div class="group">
+                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Biscoff\ Brownies\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Brookies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Chocolate\ Brownies\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/OverloadBrownies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/SmoresBrownies.svg');"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="food-type">
+                <a class="food">Bread & Pastries</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Almond\ Croissant.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Banana\ Muffin\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Chocolate\ Muffin.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Messy\ Cookies\ &\ Brownies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Pain\ Au\ Chocolat.svg');"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="food-type">
+                <a class="food">Snacks</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Beef\ Quesadilla.svg');"></div>
+                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Cajun\ Fries.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Hash\ Brown.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Nachos.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Regular\ Fries\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Savory\Fries.svg');"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

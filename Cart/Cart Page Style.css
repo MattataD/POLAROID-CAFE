@@ -108,7 +108,7 @@ body > img{
 .cart-wrap {
     width: 100%;
     min-height: 100vh;
-    background-image: url("../Cart/Images/Cart.svg");
+    background-image: url("Cart.svg");
     background-size: contain;          
     background-repeat: no-repeat;
     background-position: center top;

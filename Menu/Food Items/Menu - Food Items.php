@@ -11,6 +11,7 @@
     <script defer src="Menu - Food Items Script.js"></script>
     <link rel="stylesheet" href="Menu - Food Items Styles.css">
     <title>Polaroid Cafe</title>
+     <link rel="icon" type="image/x-icon" href="../Images/Polaroid_Icon.svg">
 </head>
 <body>
  <img src="../Images/A4-MENU.svg" alt="">
@@ -122,3 +123,4 @@
     </div>
 </body>
 </html>
+

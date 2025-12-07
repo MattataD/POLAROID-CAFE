@@ -9,6 +9,7 @@
     <script defer src="Contact Info Page Script.js"></script>
     <link rel="stylesheet" href="Contact Info Page Styles.css">
     <title>Polaroid Cafe</title>
+    <link rel="icon" type="image/x-icon" href="../Contact/Images/Polaroid_Icon.svg">
 </head>
 
 <body>

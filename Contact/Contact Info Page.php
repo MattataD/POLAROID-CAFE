@@ -55,8 +55,8 @@
         <div class="contact-section">
             <div class="contact-flex">
                 <div class="map-side">
-                    <h2 class="location-title">WE ARE LOCATED AT:</h2>
-                    <p class="location-address">(ADDRESS HERE)</p>
+                    <h2 class="location-title">POLAROID CAFE IS LOCATED AT:</h2>
+                    <p class="location-address">Urduja Village, Vicas Zabarte Camarin Road 1420 Caloocan, Philippines</p>
 
                     <div class="map-container">
                         <iframe 
@@ -71,20 +71,20 @@
 
                 <div class="info-side">
                     <h2 class="contact-title">CONTACT INFO:</h2>
-                    <p class="contact-details">(contact info here)</p>
+                    <p class="contact-details">You can contact Polaroid Cafe thru:</p>
 
                     <div class="socials">
                         <div class="social-item">
-                            <img src="/Contact/Images/Facebook.svg" class="social-icon">
-                            <p class="social-text">(plug in contact)</p>
+                            <img src="../Contact/Images/Facebook.svg" class="social-icon">
+                            <a href="https://www.facebook.com/polaroidcafeph" target="_blank" class="social-text">Polaroid Cafe</a>
                         </div>
                         <div class="social-item">
-                            <img src="/Contact/Images/Instagram.svg" class="social-icon">
-                            <p class="social-text">(plug in contact)</p>
+                            <img src="../Contact/Images/Instagram.svg" class="social-icon">
+                            <a href="https://www.instagram.com/polaroidcafeph/?fbclid=IwY2xjawOiLF5leHRuA2FlbQIxMABicmlkETFCWElyUXVpQ0hRV0I3VGxQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHh-ilv4y4wfYhpJ4PsS9EcOlJw7EhbbMOl_QC4x1LN2G0CbmvtSZaxzV47xe_aem_ECwJCa9Ld_EL3ASoy-lJPQ" target="_blank" class="social-text">@polaroidcafeph</a>
                         </div>
                         <div class="social-item">
-                            <img src="/Contact/Images/Gmail.svg" class="social-icon">
-                            <p class="social-text">(plug in contact)</p>
+                            <img src="../Contact/Images/Gmail.svg" class="social-icon">
+                            <p class="social-text">polaroidcafe.2021@gmail.com</p>
                         </div>
                     </div>
                 </div>

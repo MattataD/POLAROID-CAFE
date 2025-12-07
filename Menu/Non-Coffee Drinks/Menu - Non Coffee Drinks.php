@@ -1,106 +1,372 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">                
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="../../cart-manager.js"></script>
-    <script defer src="../../price.js"></script>
-    <script defer src="Menu - Non Coffee Drink Script.js"></script>
-    <link rel="stylesheet" href="Menu - Non Coffee Drinks Styles.css">
-    <title>Polaroid Cafe</title>
-</head>
-<body>
-    <img src="../Images/A4-MENU.svg" alt="">
-    <header class="Nav-bar">
-    <div class="logo-container">
-    <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
-    <p class="logo-text">POLAROID CAFE</p>
-    </div>
-        <ul class="links">
-            <li class="nav-item-container">
-                <div class="link-items">
-                    <img src="../Images/Home Fill Icon.svg  " class="nav-icon" alt="">
-                    <a href="../../Home Page.php" class="link">Home</a>
-                </div>
-            </li>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-            <li class="nav-item-container">
-                <div class="link-items">
-                    <img src="../Images/Menu Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="../Menu/Coffee Drinks/Menu - Coffee Drinks.php" class="link">Menu</a>
-                </div>
-            </li>
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    position: relative;
+}
 
-            <li class="nav-item-container">
-                <div class="link-items">
-                    <img src="../Images/Contuct Us Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="../../Contact/Contact Info Page.php" class="link">Contact Us</a>
-                </div>
-            </li>
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
 
-            <li class="nav-item-container">
-                <div class="link-items">
-                    <img src="../Images/Cart Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="../../Cart/Cart Page.php" class="link">Cart</a>
-                </div>
-            </li>
-        </ul>
-    </header>
-    <header class="menu-bar">
-        <ul class="menu">
-            <li class="menu-parts">
-                <a href="../Coffee Drinks/Menu - Coffee Drinks.php" class="category">Coffee Drinks</a>
-            </li>
-            <li class="menu-parts">
-                <a href="../Non-Coffee Drinks/Menu - Non Coffee Drinks.php" class="category">Non-Coffee Drinks</a>
-            </li>
-            <li class="menu-parts">
-                <a href="../Food Items/Menu - Food Items.php" class="category">Food Items</a>
-            </li>
-        </ul>
-    </header>
-    <div class="non-coffee-drinks">
-        <ul class="drinks">
-            <li class="drink-type">
-                <a class="drink">Milktea Classics</a>
-                <div class="carousel">
-                    <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Chocolate Milktea.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Matcha Milktea.svg');"></div>
-                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Wintermelon Milktea.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Oreo Milktea.svg');"></div>
-                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Red Velvet Milktea.svg');"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="drink-type">
-                <a class="drink">Iced Milk</a>
-                <div class="carousel">
-                    <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/ICED MILK/Choco\ Milk.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/ICED MILK/Matcha\ Milk.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/ICED MILK/Strawberry\ Milk.svg');"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="drink-type">
-                <a class="drink">Cream Frappe</a>
-                <div class="carousel">
-                    <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Alcapone.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Black Forest.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Blueberries N’ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Cookies\ \ N’\ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Dark\ \ Choco.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Matcha\ \ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Red\ Velvet\ Frappe.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Strawberries\ N’\ Cream.svg');"></div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</body>
-</html>
+body > img{
+     width: 100%;
+    height: 175vh;
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter:brightness(0.7);
+}
+
+
+.Nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: #000;
+    position: relative;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.Nav-bar-hov {
+    background-color: rgba(217, 217, 217, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    position: static;
+    filter: none;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav-item-container {
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.nav-item-container:hover {
+    background: rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.link-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0.15);
+}
+
+.link {
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #444;
+}
+
+
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.menu-parts {
+    background: #ffffffcc;
+    padding: 12px 20px;
+
+    border: 2px solid #ffffff80;
+    backdrop-filter: blur(6px);
+
+    width: 300px;
+    text-align: center;
+}
+
+.menu-parts:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    background: #fff;
+}
+
+.category{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+/* .menu-layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+} */
+
+.non-coffee-drinks {
+    width: 400px;
+}
+
+.drinks {
+    margin-top: 20px;
+    margin-left: 100px;
+    list-style: none;
+    padding: 0;
+}
+
+.drink-type {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.drink {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* .menu-display {
+    flex: 1;
+    background: #ffffffcc;
+    border-radius: 15px;
+    padding: 40px;
+    border: 2px solid #ffffff80;
+    backdrop-filter: blur(6px);
+} */
+ .carousel {
+    margin-top: 10px;
+    width: 600%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+ }
+ 
+ .carousel:active {
+    cursor: grabbing;
+ }
+ 
+ .carousel::-webkit-scrollbar {
+    display: none;
+ }
+  .card {
+    flex: 0 0 300px;
+    width: 150px;
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+ }
+ 
+ .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .group {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+ }
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.overlay-content {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-image {
+    width: 250px;
+    height: 350px;
+    object-fit:contain;
+    border-radius: 10px;
+}
+
+.overlay-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.overlay-options h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.size-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.size-btn {
+    padding: 12px 24px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.size-btn:hover {
+    border-color: #333;
+    transform: translateY(-2px);
+}
+
+.size-btn.selected {
+    background: #333;
+    color: white;
+    border-color: #333;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.back-btn, .add-to-cart-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.back-btn:hover {
+    background: #e0e0e0;
+}
+
+.add-to-cart-btn {
+    background: #333;
+    color: white;
+}
+
+.add-to-cart-btn:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.quantity-btn {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #333;
+    background: white;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn:hover {
+    background: #333;
+    color: white;
+    transform: scale(1.1);
+}
+
+.quantity-btn:active {
+    transform: scale(0.95);
+}
+
+.quantity-display {
+    font-size: 1.3rem;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+    color: #333;
+}

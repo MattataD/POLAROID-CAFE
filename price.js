@@ -82,6 +82,7 @@ const ITEM_PRICES = {
 function normalizeItemName(name) {
     return name
         .toLowerCase()
+        .replace(/\s+/g, ' ')
         .replace(/&/g, '')
         .replace(/'/g, '')
         .trim();
@@ -140,3 +141,4 @@ function itemExists(itemName) {
     );
 
 }
+

@@ -6,14 +6,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">                
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="../../cart-manager.js"></script>
     <script defer src="../../price.js"></script>
-    <script defer src="Menu - Non Coffee Drink Script.js"></script>
-    <link rel="stylesheet" href="Menu - Non Coffee Drinks Styles.css">
+    <script defer src="../../cart-manager.js"></script>
+    <script defer src="Menu - Food Items Script.js"></script>
+    <link rel="stylesheet" href="Menu - Food Items Styles.css">
     <title>Polaroid Cafe</title>
 </head>
 <body>
-    <img src="../Images/A4-MENU.svg" alt="">
+ <img src="../Images/A4-MENU.svg" alt="">
     <header class="Nav-bar">
     <div class="logo-container">
     <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
@@ -62,42 +62,60 @@
             </li>
         </ul>
     </header>
-    <div class="non-coffee-drinks">
-        <ul class="drinks">
-            <li class="drink-type">
-                <a class="drink">Milktea Classics</a>
+    <div class="food-items">
+        <ul class="foods">
+            <li class="food-type">
+                <a class="food">Cookies</a>
                 <div class="carousel">
                     <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Chocolate Milktea.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Matcha Milktea.svg');"></div>
-                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Wintermelon Milktea.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Oreo Milktea.svg');"></div>
-                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Red Velvet Milktea.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Belgian\ Chocolate\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Campfire\ S\'mores\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Cashew\ ChocoChip.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Choco\ Chip.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Lotus\ Biscoff\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Matcha.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Oreo\ Bomb\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Red\ Velvet.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Triple\ Choco.svg');"></div>
+
                     </div>
                 </div>
             </li>
-            <li class="drink-type">
-                <a class="drink">Iced Milk</a>
+            <li class="food-type">
+                <a class="food">Brownies</a>
                 <div class="carousel">
                     <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/ICED MILK/Choco\ Milk.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/ICED MILK/Matcha\ Milk.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/ICED MILK/Strawberry\ Milk.svg');"></div>
+                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Biscoff\ Brownies\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Brookies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Chocolate Brownies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Overload Brownies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Smores Brownies.svg');"></div>
                     </div>
                 </div>
             </li>
-            <li class="drink-type">
-                <a class="drink">Cream Frappe</a>
+            <li class="food-type">
+                <a class="food">Bread & Pastries</a>
                 <div class="carousel">
                     <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Alcapone.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Black Forest.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Blueberries N’ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Cookies\ \ N’\ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Dark\ \ Choco.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Matcha\ \ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Red\ Velvet\ Frappe.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Strawberries\ N’\ Cream.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Almond\ Croissant.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Banana\ Muffin\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Chocolate\ Muffin.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Messy\ Cookies\ &\ Brownies.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Pain\ Au\ Chocolat.svg');"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="food-type">
+                <a class="food">Snacks</a>
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Beef Quesadilla.svg');"></div>
+                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Cajun Fries.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Hash Brown.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Nachos.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Regular Fries.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Savory Fries.svg');"></div>
+                    </div>
                 </div>
             </li>
         </ul>

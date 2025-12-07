@@ -18,20 +18,36 @@ const modal = document.getElementById("cancelModal");
 const confirmCancel = document.getElementById("confirmCancel");
 const closeModal = document.getElementById("closeModal");
 
-// API Base URL - adjust this to your server path
 const API_BASE = './api';
 
 function timeAgo(ts) {
-    const diff = Math.floor((Date.now() - ts) / 60000);  // ✅ Correct: 60000 ms = 1 minute
-    if (diff === 0) return "Just now";
-    if (diff < 60) return diff + " min ago";
-    const hours = Math.floor(diff / 60);
-    if (hours < 24) return hours + " hour" + (hours > 1 ? "s" : "") + " ago";
+    const timestamp = parseInt(ts);
+    
+    const now = Date.now();
+    const diffMs = now - timestamp;
+    const diffMinutes = Math.floor(diffMs / 60000);
+    
+    if (diffMinutes < 0) {
+        return "Just now";
+    }
+    
+    if (diffMinutes === 0) {
+        return "Just now";
+    }
+    
+    if (diffMinutes < 60) {
+        return diffMinutes + " min ago";
+    }
+    
+    const hours = Math.floor(diffMinutes / 60);
+    if (hours < 24) {
+        return hours + " hour" + (hours > 1 ? "s" : "") + " ago";
+    }
+    
     const days = Math.floor(hours / 24);
     return days + " day" + (days > 1 ? "s" : "") + " ago";
 }
 
-// Fetch orders from database
 async function fetchOrders() {
     try {
         const response = await fetch(`${API_BASE}/get_orders.php`);
@@ -50,7 +66,6 @@ async function fetchOrders() {
     }
 }
 
-// Update order status in database
 async function updateOrderStatus(orderId, newStatus) {
     try {
         const response = await fetch(`${API_BASE}/update_order.php`, {
@@ -67,7 +82,6 @@ async function updateOrderStatus(orderId, newStatus) {
         const result = await response.json();
         
         if (result.success) {
-            // Update local orders array
             const order = orders.find(o => o.order_id === orderId);
             if (order) {
                 order.status = newStatus;
@@ -105,7 +119,6 @@ function renderOrders() {
         const card = document.createElement("div");
         card.className = `order-card status-${order.status.toLowerCase().replace(' ', '')}`;
 
-        // Format items for display
         const itemsText = order.items
             .map(item => `${item.quantity}x ${item.name} (${item.size})`)
             .join(', ');
@@ -135,7 +148,6 @@ function loadDetails(orderId) {
 
     detailsContent.classList.remove("hidden");
     
-    // Format items list
     const itemsList = selectedOrder.items
         .map(item => `
             <div style="padding: 8px; background: rgba(255,255,255,0.3); border-radius: 8px; margin: 5px 0;">
@@ -213,13 +225,11 @@ confirmCancel.onclick = async () => {
     }
 };
 
-// Remove simulate button functionality (using real orders now)
 if (simulateBtn) {
     simulateBtn.textContent = 'Refresh Orders';
     simulateBtn.onclick = fetchOrders;
 }
 
-// Notification functions
 function showError(message) {
     showNotification(message, 'error');
 }
@@ -252,8 +262,6 @@ function showNotification(message, type) {
     }, 3000);
 }
 
-// Auto-refresh orders every 30 seconds
 setInterval(fetchOrders, 30000);
 
-// Initial load
 fetchOrders();

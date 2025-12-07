@@ -10,6 +10,7 @@
     <script defer src="Cart Page Script.js"></script>
     <link rel="stylesheet" href="Cart Page Style.css">
     <title>Polaroid Cafe</title>
+    <link rel="icon" type="image/x-icon" href="Images/Polaroid_Icon.svg">
 </head>
   <img src="../Images/A4-MENU.svg" alt="">
     <header class="Nav-bar">
@@ -83,3 +84,4 @@
    
 </body>
 </html>
+

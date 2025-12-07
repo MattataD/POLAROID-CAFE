@@ -11,10 +11,9 @@
     <script defer src="Menu - Non Coffee Drink Script.js"></script>
     <link rel="stylesheet" href="Menu - Non Coffee Drinks Styles.css">
     <title>Polaroid Cafe</title>
-    <link rel="icon" type="image/x-icon" href="../Images/Polaroid_Icon.svg">
 </head>
 <body>
-    <img src="../Images/A4-MENU for canva 1.png" alt="">
+    <img src="../Images/A4-MENU.svg" alt="">
     <header class="Nav-bar">
     <div class="logo-container">
     <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
@@ -69,12 +68,11 @@
                 <a class="drink">Milktea Classics</a>
                 <div class="carousel">
                     <div class="group">
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Chocolate.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/MATCHA.svg');"></div>
-                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/MatchaMilktea.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/OREO.svg');"></div>
-                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Red\ Velvet\ Milktea.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/WINTERMELON.svg');"></div>
+                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Chocolate Milktea.svg');"></div>
+                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Matcha Milktea.svg');"></div>
+                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Wintermelon Milktea.svg');"></div>
+                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Oreo Milktea.svg');"></div>
+                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/MIKLTEA_CLASSIC/Red Velvet Milktea.svg');"></div>
                     </div>
                 </div>
             </li>
@@ -93,8 +91,8 @@
                 <div class="carousel">
                     <div class="group">
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Alcapone.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Black\ \ Forest.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Blueberries\ \ N’\ Cream.svg');"></div>
+                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Black Forest.svg');"></div>
+                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Blueberries N’ Cream.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Cookies\ \ N’\ Cream.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Dark\ \ Choco.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Matcha\ \ Cream.svg');"></div>

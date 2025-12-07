@@ -8,10 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Home Page Style.css">
     <title>Polaroid Cafe</title>
-    <link rel="icon" type="image/x-icon" href="Images/Polaroid_Icon.svg">
 </head>
 <body>
-    <img src="Images/A4-MENU for canva 1.png" alt="Background" class="background-img">
+    <img src="Images/A4-MENU.svg" alt="Background" class="background-img">
     
     <header class="Nav-bar">
         <div class="logo-container">
@@ -53,13 +52,13 @@
         <div class="pause-indicator">Paused</div>
         <div class="group-container">
             <div class="card card_3" data-index="0">
-                <img src="Images/ad 1.png" alt="Advertisement 1">
+                <img src="Images/ad-1.svg" alt="Advertisement 1">
             </div>
             <div class="card card_1" data-index="1">
-                <img src="Images/ad 2.png" alt="Advertisement 2">
+                <img src="Images/ad-2.svg" alt="Advertisement 2">
             </div>
             <div class="card card_2" data-index="2">
-                <img src="Images/ad 3.png" alt="Advertisement 3">
+                <img src="Images/ad-3.svg" alt="Advertisement 3">
             </div>
         </div>
     </div>

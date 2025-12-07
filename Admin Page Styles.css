@@ -9,10 +9,9 @@ body {
     position: relative;
 }
 
-/* Background Image */
 body > img {
     width: 100%;
-    height: 100vh;
+    height: 175vh;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -121,7 +120,6 @@ ul, li {
     gap: 35px;
 }
 
-/* LEFT PANEL — LIVE ORDERS */
 .orders-panel {
     background: rgba(255, 255, 255, 0.25);
     border-radius: 20px;
@@ -156,7 +154,6 @@ ul, li {
     gap: 15px;
 }
 
-/* ORDER CARDS */
 .order-card {
     background: rgba(255,255,255,0.45);
     padding: 18px;
@@ -182,7 +179,6 @@ ul, li {
     opacity: 0.8;
 }
 
-/* --- RIGHT PANEL — ORDER DETAILS --- */
 .details-panel {
     background: rgba(255, 255, 255, 0.25);
     padding: 25px;
@@ -217,13 +213,11 @@ ul, li {
     transform: scale(1.05);
 }
 
-/* STATUS COLORS */
 .status-new { border-left-color: #e63946; }
 .status-progress { border-left-color: #ffb703; }
 .status-done { border-left-color: #2a9d8f; }
 .status-cancelled { border-left-color: #6c757d; }
 
-/* MODAL */
 .modal {
     position: fixed;
     inset: 0;

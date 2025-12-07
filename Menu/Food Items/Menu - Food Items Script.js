@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Image overlay functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
     
@@ -77,13 +77,96 @@ function createOverlay(imageUrl, itemName) {
     const optionsContainer = document.createElement('div');
     optionsContainer.className = 'overlay-options';
     
-    // Item name display
+
+    const item = polaroidSearch.getBestMatch(itemName);
+    
+ 
+    if (!item) {
+        const errorMsg = document.createElement('div');
+        errorMsg.style.cssText = `
+            padding: 40px;
+            text-align: center;
+            color: #666;
+        `;
+        
+        const errorTitle = document.createElement('h2');
+        errorTitle.textContent = '⚠️ Item Not Found';
+        errorTitle.style.color = '#e74c3c';
+        errorTitle.style.marginBottom = '15px';
+        
+        const errorText = document.createElement('p');
+        errorText.textContent = `Could not find "${itemName}" in our menu.`;
+        errorText.style.marginBottom = '20px';
+        
+        const suggestions = polaroidSearch.search(itemName, { limit: 3 });
+        if (suggestions.length > 0) {
+            const suggestText = document.createElement('p');
+            suggestText.textContent = 'Did you mean:';
+            suggestText.style.fontWeight = 'bold';
+            suggestText.style.marginBottom = '10px';
+            
+            const suggestionList = document.createElement('ul');
+            suggestionList.style.listStyle = 'none';
+            suggestionList.style.padding = '0';
+            
+            suggestions.forEach(s => {
+                const li = document.createElement('li');
+                li.textContent = s.name;
+                li.style.padding = '5px';
+                li.style.color = '#3498db';
+                suggestionList.appendChild(li);
+            });
+            
+            errorMsg.appendChild(errorTitle);
+            errorMsg.appendChild(errorText);
+            errorMsg.appendChild(suggestText);
+            errorMsg.appendChild(suggestionList);
+        } else {
+            errorMsg.appendChild(errorTitle);
+            errorMsg.appendChild(errorText);
+        }
+        
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'back-btn';
+        closeBtn.textContent = 'Close';
+        closeBtn.style.marginTop = '20px';
+        closeBtn.addEventListener('click', () => overlay.remove());
+        
+        errorMsg.appendChild(closeBtn);
+        overlayContent.appendChild(img);
+        overlayContent.appendChild(errorMsg);
+        overlay.appendChild(overlayContent);
+        
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) overlay.remove();
+        });
+        
+        document.body.appendChild(overlay);
+        return;
+    }
+    
+
+    const actualItemName = item.name;
+    const availableSizes = item.sizes;
+    const itemPrices = item.prices;
+    
+
     const itemTitle = document.createElement('h2');
-    itemTitle.textContent = itemName;
+    itemTitle.textContent = actualItemName;
     itemTitle.style.marginBottom = '20px';
     itemTitle.style.color = '#333';
     
-    // Size selection
+  
+    if (item.confidence && item.confidence !== 'exact' && actualItemName.toLowerCase() !== itemName.toLowerCase()) {
+        const matchInfo = document.createElement('small');
+        matchInfo.textContent = `(Matched from: "${itemName}")`;
+        matchInfo.style.display = 'block';
+        matchInfo.style.color = '#888';
+        matchInfo.style.fontSize = '0.8em';
+        matchInfo.style.marginTop = '5px';
+        itemTitle.appendChild(matchInfo);
+    }
+    
     const sizeLabel = document.createElement('h3');
     sizeLabel.textContent = 'Choose Size:';
     
@@ -92,10 +175,6 @@ function createOverlay(imageUrl, itemName) {
     
     let selectedSize = null;
     let selectedPrice = 0;
-    
-    // Get specific prices for this food item
-    const availableSizes = getAvailableSizesForItem(itemName);
-    const itemPrices = getAllPricesForItem(itemName);
     
     availableSizes.forEach(size => {
         const price = itemPrices[size];
@@ -111,7 +190,7 @@ function createOverlay(imageUrl, itemName) {
         sizeButtons.appendChild(btn);
     });
     
-    // Quantity selection
+
     const quantityLabel = document.createElement('h3');
     quantityLabel.textContent = 'Quantity:';
     
@@ -149,7 +228,7 @@ function createOverlay(imageUrl, itemName) {
     quantityContainer.appendChild(quantityDisplay);
     quantityContainer.appendChild(increaseBtn);
     
-    // Action buttons
+
     const actionButtons = document.createElement('div');
     actionButtons.className = 'action-buttons';
     
@@ -166,7 +245,7 @@ function createOverlay(imageUrl, itemName) {
     addToCartBtn.addEventListener('click', () => {
         if (selectedSize) {
             addToCart({
-                name: itemName,
+                name: actualItemName, 
                 size: selectedSize,
                 price: selectedPrice,
                 quantity: quantity,
@@ -187,7 +266,7 @@ function createOverlay(imageUrl, itemName) {
                 font-weight: 600;
                 box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             `;
-            message.textContent = `Added ${quantity} ${selectedSize} ${itemName} to cart!`;
+            message.textContent = `Added ${quantity} ${selectedSize} ${actualItemName} to cart!`;
             document.body.appendChild(message);
             
             setTimeout(() => message.remove(), 3000);
@@ -197,7 +276,6 @@ function createOverlay(imageUrl, itemName) {
         }
     });
     
-    // Append everything
     optionsContainer.appendChild(itemTitle);
     optionsContainer.appendChild(sizeLabel);
     optionsContainer.appendChild(sizeButtons);

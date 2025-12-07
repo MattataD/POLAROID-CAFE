@@ -59,8 +59,8 @@ const ITEM_PRICES = {
     'Biscoff Brownies': { 'Regular': 45 },
     'Brookies': { 'Regular': 55 },
     'Chocolate Brownies': { 'Regular': 40 },
-    'OverloadBrownies': { 'Regular': 45 },
-    'SmoresBrownies': { 'Regular': 45 },
+    'Overload Brownies': { 'Regular': 45 },
+    'Smores Brownies': { 'Regular': 45 },
     
     // ===== BREAD & PASTRIES =====
     'Almond Croissant': { 'Regular': 80 },
@@ -70,7 +70,7 @@ const ITEM_PRICES = {
     'Pain Au Chocolat': { 'Regular': 80 },
     
     // ===== SNACKS =====
-    'Beef Quesadilla':{ 'Regular': 140 },
+    'Beef Quisedeilla':{ 'Regular': 140 },
     'Cajun Fries': { 'Regular': 70 },
     'Hash Brown': { 'Regular': 35 },
     'Nachos': { 'Regular': 140 },

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Home Page Style.css">
     <title>Polaroid Cafe</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Polaroid_Icon.svg">
 </head>
 <body>
     <img src="Images/A4-MENU.svg" alt="Background" class="background-img">

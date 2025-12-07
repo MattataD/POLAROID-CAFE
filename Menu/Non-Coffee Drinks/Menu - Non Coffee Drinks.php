@@ -94,7 +94,7 @@
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Alcapone.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Black Forest.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Blueberries N’ Cream.svg');"></div>
-                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Cookies\ \ N’\ Cream.svg');"></div>
+                        <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Cookies N’ Cream.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Dark\ \ Choco.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Matcha\ \ Cream.svg');"></div>
                         <div class="card" style="background-image: url('../Non-Coffee Drinks/Non-Coffee Drinks/CREAM FRAPPE/Red\ Velvet\ Frappe.svg');"></div>

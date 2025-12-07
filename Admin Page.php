@@ -4,14 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script defer src="Admin Page Script.js"></script>
     <link rel="stylesheet" href="Admin Page Styles.css">
-
     <title>Polaroid Cafe | Admin Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="Images/Polaroid_Icon.svg">
 </head>
 <body>
     <img src="Images/A4-MENU for canva 1.png" alt="">
@@ -37,10 +35,8 @@
         </ul>
     </header>
 
-    <!-- MAIN DASHBOARD -->
     <div class="dashboard-container">
 
-        <!-- LEFT: LIVE ORDER QUEUE -->
         <div class="orders-panel">
             <div class="panel-header">
                 <h2>Live Order Queue</h2>
@@ -50,7 +46,6 @@
             <div id="orderList" class="order-list"></div>
         </div>
 
-        <!-- RIGHT: ORDER DETAILS -->
         <div class="details-panel">
             <h2>Order Details</h2>
             <p class="placeholder">Select an order from the left to view full details.</p>
@@ -59,7 +54,6 @@
         </div>
     </div>
 
-    <!-- CANCEL CONFIRMATION MODAL -->
     <div id="cancelModal" class="modal hidden">
         <div class="modal-box">
             <h3>Cancel this order?</h3>

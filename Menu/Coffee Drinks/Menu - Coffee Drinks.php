@@ -14,7 +14,7 @@
     <link rel="icon" type="image/x-icon" href="../Images/Polaroid_Icon.svg">
 </head>
 <body>
-     <img src="../Images/A4-MENU for canva 1.png" alt="">
+     <img src="../Images/A4-MENU.svg" alt="">
     <header class="Nav-bar">
     <div class="logo-container">
     <img src="../Images/LOGO POLAROID 3.png" class="logo-img" alt="Logo">
@@ -110,3 +110,4 @@
     </div>
 </body>
 </html>
+

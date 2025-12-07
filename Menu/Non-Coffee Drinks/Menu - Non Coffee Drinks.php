@@ -11,6 +11,7 @@
     <script defer src="Menu - Non Coffee Drink Script.js"></script>
     <link rel="stylesheet" href="Menu - Non Coffee Drinks Styles.css">
     <title>Polaroid Cafe</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Polaroid_Icon.svg">
 </head>
 <body>
     <img src="../Images/A4-MENU for canva 1.png" alt="">

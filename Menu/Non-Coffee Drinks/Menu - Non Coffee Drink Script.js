@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Image overlay functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
     
@@ -77,13 +77,13 @@ function createOverlay(imageUrl, itemName) {
     const optionsContainer = document.createElement('div');
     optionsContainer.className = 'overlay-options';
     
-    // Item name display
+
     const itemTitle = document.createElement('h2');
     itemTitle.textContent = itemName;
     itemTitle.style.marginBottom = '20px';
     itemTitle.style.color = '#333';
     
-    // Size selection
+
     const sizeLabel = document.createElement('h3');
     sizeLabel.textContent = 'Choose Size:';
     
@@ -93,7 +93,7 @@ function createOverlay(imageUrl, itemName) {
     let selectedSize = null;
     let selectedPrice = 0;
     
-    // Get specific prices for this food item
+
     const availableSizes = getAvailableSizesForItem(itemName);
     const itemPrices = getAllPricesForItem(itemName);
     
@@ -111,7 +111,7 @@ function createOverlay(imageUrl, itemName) {
         sizeButtons.appendChild(btn);
     });
     
-    // Quantity selection
+
     const quantityLabel = document.createElement('h3');
     quantityLabel.textContent = 'Quantity:';
     
@@ -149,7 +149,7 @@ function createOverlay(imageUrl, itemName) {
     quantityContainer.appendChild(quantityDisplay);
     quantityContainer.appendChild(increaseBtn);
     
-    // Action buttons
+
     const actionButtons = document.createElement('div');
     actionButtons.className = 'action-buttons';
     
@@ -197,7 +197,7 @@ function createOverlay(imageUrl, itemName) {
         }
     });
     
-    // Append everything
+
     optionsContainer.appendChild(itemTitle);
     optionsContainer.appendChild(sizeLabel);
     optionsContainer.appendChild(sizeButtons);

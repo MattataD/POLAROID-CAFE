@@ -29,7 +29,7 @@ body > img{
     filter:brightness(0.7);
 }
 
-/* NAVIGATION SYSTEM!!!! */
+
 .Nav-bar {
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ body > img{
     color: #444;
 }
 
-/* MENU PART!!!! */
+
 .menu-bar {
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@ body > img{
 .menu-parts {
     background: #ffffffcc;
     padding: 12px 20px;
-    /* border-radius: 10px; --> to make the edges round not pointy! */
+
     border: 2px solid #ffffff80;
     backdrop-filter: blur(6px);
 
@@ -219,7 +219,7 @@ body > img{
     gap: 20px;
     padding-right: 20px;
  }
-/* Image Overlay Styles */
+
 .image-overlay {
     position: fixed;
     top: 0;
@@ -327,7 +327,7 @@ body > img{
     background: #000;
     transform: translateY(-2px);
 }
-/* Quantity Selector Styles */
+
 .quantity-container {
     display: flex;
     align-items: center;

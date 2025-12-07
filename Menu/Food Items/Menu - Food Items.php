@@ -11,6 +11,7 @@
     <script defer src="Menu - Food Items Script.js"></script>
     <link rel="stylesheet" href="Menu - Food Items Styles.css">
     <title>Polaroid Cafe</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Polaroid_Icon.svg">
 </head>
 <body>
  <img src="../Images/A4-MENU for canva 1.png" alt="">
@@ -110,7 +111,7 @@
                 <div class="carousel">
                     <div class="group">
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Beef\ Quesadilla.svg');"></div>
-                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Cajun\ Fries.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Cajun\ Fries.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Hash\ Brown.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Nachos.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Regular\ Fries\ Palette.svg');"></div>

@@ -69,13 +69,13 @@
                 <a class="food">Cookies</a>
                 <div class="carousel">
                     <div class="group">
-                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Belgian\ Chocolate\ Palette.svg');"></div>
-                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Campfire\ S\'mores\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Belgian Chocolate.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Campfire Smores.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Cashew\ ChocoChip.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Choco\ Chip.svg');"></div>
-                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Lotus\ Biscoff\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Lotus Biscoff.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Matcha.svg');"></div>
-                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Oreo\ Bomb\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Oreo Bomb.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Red\ Velvet.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/COOKIES/Triple\ Choco.svg');"></div>
 
@@ -86,7 +86,7 @@
                 <a class="food">Brownies</a>
                 <div class="carousel">
                     <div class="group">
-                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Biscoff\ Brownies\ Palette.svg');"></div>
+                       <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Biscoff Brownies.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Brookies.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Chocolate Brownies.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BROWNIES/Overload Brownies.svg');"></div>
@@ -99,7 +99,7 @@
                 <div class="carousel">
                     <div class="group">
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Almond\ Croissant.svg');"></div>
-                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Banana\ Muffin\ Palette.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Banana Muffin.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Chocolate\ Muffin.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Messy\ Cookies\ &\ Brownies.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/BREAD AND PASTRIES/Pain\ Au\ Chocolat.svg');"></div>
@@ -110,7 +110,7 @@
                 <a class="food">Snacks</a>
                 <div class="carousel">
                     <div class="group">
-                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Beef Quesadilla.svg');"></div>
+                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Beef Quisedeilla.svg');"></div>
                        <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Cajun Fries.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Hash Brown.svg');"></div>
                         <div class="card" style="background-image: url('../Food Items/FOOD ITEMS/SNACKS/Nachos.svg');"></div>

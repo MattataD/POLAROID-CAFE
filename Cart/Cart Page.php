@@ -50,7 +50,7 @@
             <li class="nav-item-container">
                 <div class="link-items">
                     <img src="../Cart/Images/Admin Fill Icon.svg" class="nav-icon" alt="">
-                    <a href="../Admin Page.php" class="link">Admin</a>
+                    <a href="../polaroid_login.php" class="link">Admin</a>
                 </div>
             </li>
         </ul>

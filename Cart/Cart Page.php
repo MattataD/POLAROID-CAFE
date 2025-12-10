@@ -46,6 +46,13 @@
                     <a href="../Cart/Cart Page.php" class="link">Cart</a>
                 </div>
             </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="../Cart/Images/Admin Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="../Admin Page.php" class="link">Admin</a>
+                </div>
+            </li>
         </ul>
     </header>
     <div class="cart-wrap">

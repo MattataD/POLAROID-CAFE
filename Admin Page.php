@@ -1,3 +1,5 @@
+<?php require_once 'api/session_check.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +32,13 @@
                 <div class="link-items">
                     <img src="Images/Menu Fill Icon.svg" class="nav-icon" alt="">
                     <a href="Menu/Coffee Drinks/Menu - Coffee Drinks.php" class="link">Menu</a>
+                </div>
+            </li>
+
+            <li class="nav-item-container">
+                <div class="link-items">
+                    <img src="Images/Logout Fill Icon.svg" class="nav-icon" alt="">
+                    <a href="api/logout.php" class="link">Logout</a>
                 </div>
             </li>
         </ul>

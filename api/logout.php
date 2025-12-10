@@ -9,6 +9,6 @@ if (isset($_COOKIE[session_name()])) {
 
 session_destroy();
 
-header('Location: /POLAROID-CAFE-master2.0/polaroid_login.php?logged_out=1');
+header('Location: /POLAROID-CAFE-master/polaroid_login.php?logged_out=1');
 exit;
 ?>
